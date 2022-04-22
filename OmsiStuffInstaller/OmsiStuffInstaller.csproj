@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Authors>Adam Mathieson</Authors>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>omsistuffAdam.pfx</AssemblyOriginatorKeyFile>
+    <StartupObject>OmsiStuffInstaller.App</StartupObject>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="circle.png" />
+    <None Remove="omsistuff.png" />
+    <None Remove="test_image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="circle.png" />
+    <Resource Include="omsistuff.png" />
+    <Resource Include="test_image.png" />
+  </ItemGroup>
+
+</Project>
